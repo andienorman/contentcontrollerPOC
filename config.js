@@ -7,7 +7,7 @@ function uuidv4() {
 
 function promptForName() {
     var name = '';
-    while (name === '') {
+    while (name.trim() === '') {
         name = prompt('Enter your name:');
     }
     return name;
