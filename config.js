@@ -18,7 +18,7 @@ function promptForName() {
 
 var ccLauncherConfig = {
     studentId: uuidv4().replace(/-/g, ''),
-    studentName: promptForName() + 'launcherlink_demo',
+    studentName: promptForName(),
     postStudentData: false,
     postUrl: ''
 };
