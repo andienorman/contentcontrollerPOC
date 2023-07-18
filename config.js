@@ -9,12 +9,15 @@ function promptForName() {
     var name = '';
     while (name.trim() === '') {
         name = prompt('Enter your name:');
+        if (name === null) {
+            name = '';
+        }
     }
     return name;
 }
 
 var ccLauncherConfig = {
-    studentId: uuidv4(),
+    studentId: uuidv4().replace(/-/g, ''),
     studentName: promptForName(),
     postStudentData: false,
     postUrl: ''
